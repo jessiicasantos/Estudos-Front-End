@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		ol {
+			list-style: none;
+			counter-reset: li;
+		}
+		li::before {
+			content: counter(li) ")";
+			color: red;
+			display: inline-block;
+			width: 1em;
+			margin-left: -1em;
+		} 
+		li {
+			counter-increment: li;
+		}
+	</style>
+</head>
+<body>
+	<ol>
+		<li>UM</li>
+		<li>dois</li>
+		<li>UM</li>
+		<li>UM</li>
+		<li>UM</li>
+	</ol>
+
+</body>
+</html>
