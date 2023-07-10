@@ -1,0 +1,144 @@
+body {
+	background-color: #14bdac;
+	font-family: 'cursive', 'sans-serif', 'arial';
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+input[type="button"] {
+	cursor: pointer;
+}
+
+#container {
+	padding: 50px;	
+}
+
+#botoes {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.btnOption {
+    background: #a5ecff;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px 1px #888888;
+    font-weight: 600;
+	color: #000;
+}
+
+.btnOption:hover {
+    background: #d0f5ff;
+}
+
+.btnReset {
+	position: absolute;
+    top: 0;
+    right: 0;
+	background: #de4e4e;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.btnReset:hover {
+	background: #f06666;
+}
+
+#playerVal {
+	text-align: center;
+	color: #de4e4e;
+    font-weight: 600;
+    font-size: 55px;
+}
+
+.textChoice::before {
+	content: "Escolha \"x\" ou \"o\"!";
+}
+
+.textX::before {
+    content: "Player [NUM.]: X";
+}
+
+.textO::before {
+    content: "Player [NUM.]: O";
+}
+
+.textXWin::before {
+	content: "Player X Win!";
+}
+
+.textOWin::before {
+	content: "Player O Win!";
+}
+
+.textXWin::before,
+.textOWin::before {
+	color: #fff;
+}
+
+#line1,
+#line2,
+#line3 {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+	padding: 5px 30px 5px 30px;
+	font-size: 30px;
+}
+
+input[name="playerX"] {
+	margin-right: 30px;
+}
+
+.square {
+	width: 200px;
+	height: 200px;
+    border: 4px solid #0da192;
+    font-size: 160px;
+    text-align: center;
+	cursor: pointer;
+}
+
+.square:hover {
+    background-color: #fff;
+}
+
+#line1 > .square,
+#line3 > .square {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+#square1,
+#square4,
+#square7 {
+	border-left: 0;
+}
+
+#square3,
+#square6,
+#square9 {
+	border-right: 0;
+}
+
+.squareX::before,
+.squareO::before {
+    display: block;
+    color: #000;
+    font-size: 160px;
+
+    /* z-index: 9; */
+}
+
+.squareX::before {
+	content: "X";
+}
+
+.squareO::before {
+	content: "O";
+}

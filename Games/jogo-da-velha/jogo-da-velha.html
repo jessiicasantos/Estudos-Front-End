@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+	crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="jogo-da-velha.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Jogo da Velha</h1>
+		<h2>Escolha "X" ou "O":</h2>
+	 	<div id="botoes">
+			<input type="button" name="playerX" value="x" class="btnOption btnX">
+			<input type="button" name="playerO" value="o" class="btnOption btnO">
+
+			<input type="button" name="resetGame" value="Reset" class="btnReset">
+		</div> 
+		<p id="playerVal"></p>
+		<div id="table">
+			<div class="line" id="line1">
+				<button name="square1" class="square" id="square1"></button>
+				<button name="square2" class="square" id="square2"></button>
+				<button name="square3" class="square" id="square3"></button>
+			</div>
+			<div class="line" id="line2">
+				<button name="square4" class="square" id="square4"></button>
+				<button name="square5" class="square" id="square5"></button>
+				<button name="square6" class="square" id="square6"></button>
+			</div>
+			<div class="line" id="line3">
+				<button name="square7" class="square" id="square7"></button>
+				<button name="square8" class="square" id="square8"></button>
+				<button name="square9" class="square" id="square9"></button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="jogo-da-velha.js"></script> 
+</body>
+</html>
