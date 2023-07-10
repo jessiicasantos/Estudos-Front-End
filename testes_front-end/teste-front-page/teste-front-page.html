@@ -1,0 +1,957 @@
+<!-- FAZER DROPDOWN DO HEADER E MENU -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- font awesome -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+	<!-- plugin nice select css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/teste-front-sidenav-resp.css">
+</head>
+<body>
+	<div class="container home">
+		<!-- menus -->
+		<div class="navbar navbar-expand-lg navbar-light bg-custom">
+
+			<div class="container">
+				<!-- HEADER -->
+				<header>
+					<div id="headerBg-1">
+						<div id="headerLeft">
+							<ul class="redesSociais navbar-nav">
+								<li class="nav-item">
+									<a href="#" class="nav-link">
+										<img src="img/facebook.png" />
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">
+										<img src="img/twitter.png" />
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">
+										<img src="img/instagram.png" />
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">
+										<img src="img/youtube.png" />
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href="#" class="nav-link">
+										<img src="img/linkedin.png" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div id="headerMiddle">
+							<a href="#">
+								<img src="img/whatsApp.png" />
+							</a>
+							<span>(21) 9999-2111</span>
+							<hr class="hrTop">
+							<span>2111-1010</span>
+						</div>
+					</div>
+					<!-- <div id="headerRight"> -->
+						<div id="headerBg-2">
+							<form>
+								<div class="input-group md-form form-sm form-1 pl-0">
+									<input type="text" placeholder="Buscar" aria-label="Search" class="inputSearch form-control my-0 py-1"> <!-- input class="" -->
+									<div class="input-group-prepend">
+										<span class="input-group-text cyan lighten-2" id="basic-text1">
+											<a href="">
+												<i class="fa fa-search" aria-hidden="true"></i>
+											</a>
+										</span>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div id="headerBg-3">
+							<a href="#">CONTATO</a>
+						</div>
+						<div id="headerBg-4">
+							<div id="header-login">
+								<a href="#" id="aLogin">
+									<img src="img/user.png" id="iconLogin">
+								LOGIN</a>
+								<div class="submenu-login">
+									<ul class="header submenu login-list" id="">
+										<li>
+											<a href="#">AVA</a>
+										</li>
+										<li>
+											<a href="#">Portal do aluno</a>
+										</li>
+										<li>
+											<a href="#">Portal do professor</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- </div> -->
+					</header>
+
+
+					<!-- logo -->
+					<div class="navBrand">
+						<a href="#" class="navbar-brand">
+							<img src="https://unicarioca.edu.br/sites/default/files/logo-unicarioca.png" class="nav-img">
+						</a>
+					</div>
+					<!-- btn responsive -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" id="nav-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+						<!-- <span class="navbar-toggler-icon"></span> -->
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarMain">
+
+						<!-- MENU -->
+						<nav id="menuNavSec">
+							<div class="navDireita">
+								<ul id="menu" class="navbar-nav">
+									<li class="menu-li nav-item dropdown" id="menu-cursos">
+										<a href="#">CURSOS</a>
+										<ul id="first-submenu" class="submenu navbar-nav">
+											<li id="submenu-graduacao">
+												<h2 class="dropdown-item">GRADUAÇÃO</h2>
+												<ul class="menu-links-list navbar-nav">
+													<li class="nav-item">
+														<a href="#">ADMINISTRAÇÃO</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">CIÊNCIA DA COMPUTAÇÃO</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">CIÊNCIAS CONTÁBEIS</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">DESIGN</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">DIREITO</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">ENGENHARIA CÍVIL</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">ENGENHARIA DA COMPUTAÇÃO</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">ENGENHARIA DE PRODUÇÃO</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">ENGENHARIA ELÉTRICA</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">GESTÃO DE RECURSOS HUMANOS</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">JORNALISMO</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">LOGÍSTICA</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">MARKETING</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">PEDAGOGIA</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">PUBLICIDADE E PROPAGANDA</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">REDES DE COMPUTADORES</a>
+													</li>
+
+												</ul>
+											</li>
+											<li class="nav-item">
+												<h2 class="dropdown-item">GRADUAÇÃO EAD</h2>
+												<ul class="menu-links-list navbar-nav" id="">
+													<li class="nav-item">
+														<a href="#">ADMINISTRAÇÃO EAD</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">CIÊNCIAS CONTÁBEIS</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">PEDAGOGIA EAD</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">MARKETING EAD</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">GESTÃO DE RECURSOS HUMANOS EAD</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">LOGÍSTICA EAD</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">PROCESSOS GERENCIAIS EAD</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">GESTÃO FINANCEIRA EAD</a>
+													</li>
+
+												</ul>
+											</li>
+											<li class="nav-item">
+												<h2 class="dropdown-item">PÓS-GRADUAÇÃO</h2>
+												<ul class="menu-links-list navbar-nav" id="">
+													<li class="nav-item">
+														<a href="#">CONTROLADORIA E TRIBUTOS</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">MBA EM MARKETING</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">MÍDIAS SOCIAIS</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">MBA EM RECURSOS HUMANOS</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">MBA EM LOGÍSTICA E OPERAÇÕES</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">PSICOPEDAGOGIA CLÍNICA E INSTITUCIONAL</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">GERÊNCIA DE PROJETOS</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">PROJETO E GERÊNCIA DE REDES DE COMPUTADORES</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">COMPUTADORES</a>
+													</li>
+													<li class="nav-item">
+														<a href="#">SEGURANÇA CIBERNÉTICA</a>
+													</li>
+
+												</ul>
+											</li>
+											<li id="mestrado">
+												<h2 class="dropdown-item">MESTRADO</h2>
+												<ul class="menu-links-list navbar-nav" id="mestrado-menu-links-list">
+													<li class="nav-item">
+														<a href="#">NOVAS TECNOLOGIAS DIGITAIS NA EDUCAÇÃO</a>
+													</li>
+
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- COMO ENTRAR  -->
+									<li class="menu-li nav-item dropdown">
+										<a href="#">COMO ENTRAR</a>
+										<ul class="submenu menu-links-list center-a-menu navbar-nav">
+											<li class="nav-item">
+												<a href="#" class="nav-link">VESTIBULAR</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">COM A NOTA DO ENEM</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">SEGUNDA GRADUAÇÃO</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">TRANSFERÊNCIA EXTERNA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">REABERTURA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PÓS-GRADUAÇÃO</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">MESTRADO</a>
+											</li>
+										</ul>
+									</li>
+									
+									<!-- bolsas e financiamentos -->
+									<li class="menu-li nav-item dropdown">
+										<a href="#">BOLSAS & FINANCIAMENTOS</a>
+										<ul class="submenu menu-links-list center-a-menu bolsas navbar-nav mr-auto">
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROUNI</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">FIES</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">CONVÊNIOS</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">AMIGO CARIOCA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PARCELAMENTO UNICARIOCA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">CRÉDITO UNIVERSITÁRIO PRAVALER</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROGRAMA DE BOLSAS EDUCARIOCA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROGRAMA SANTANDER</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">GRADUAÇÃO</a>
+											</li>
+										</ul>
+									</li>
+									<!-- acontece -->
+									<li class="menu-li nav-item dropdown">
+										<a href="#">ACONTECE</a>
+									</li>
+									<!-- conheça -->
+									<li class="menu-li nav-item dropdown">
+										<a href="#">CONHEÇA A UNIDRUPAL</a>
+										<ul class="submenu menu-links-list center-a-menu unidrupal navbar-nav">
+											<li class="nav-item">
+												<a href="#" class="nav-link">INSTITUCIONAL</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">DIFERENCIAIS</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROFESSORES</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">RESPONSABILIDADE</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">SOCIOAMBIENTAL</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">CPA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROGRAMA DE QUALIDADE INTERNA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">CPA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PQI</a>
+											</li>
+										</ul>
+									</li>
+									<!-- onde estamos -->
+									<li class="menu-li nav-item dropdown">
+										<a href="#">ONDE ESTAMOS</a>
+										<ul class="submenu menu-links-list center-a-menu onde navbar-nav">
+											<li class="nav-item">
+												<a href="#" class="nav-link">UNIDADE E POLO RIO COMPRIDO</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">UNIDADE E POLO MÉIER</a>
+											</li>
+										</ul>
+									</li>
+									<li id="btnMenu" class="menu-li nav-link">
+										<button class="btn">INSCREVA-SE</button>
+									</li> 
+								</ul>
+							</div>
+						</nav>
+
+						<!-- menu mobile -->
+						<nav id="menuMobile">
+							<div class="navDireita">
+								<ul id="menu" class="navbar-nav">
+									<li class="menu-li nav-item dropdown-mobile" id="menu-cursos-mobile">
+										<a href="#" class="nav-mobile-label">CURSOS</a>
+										<ul id="first-submenu-mobile" class="submenu-mobile navbar-nav">
+											<li id="submenu-graduacao">
+												<h2 class="dropdown-item" id="first-drop-item">GRADUAÇÃO</h2>
+												<ul class="menu-links-list-mobile navbar-nav" id="first-menu-links-list">
+													<li class="nav-item mobile">
+														<a href="#">ADMINISTRAÇÃO</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">CIÊNCIA DA COMPUTAÇÃO</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">CIÊNCIAS CONTÁBEIS</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">DESIGN</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">DIREITO</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">ENGENHARIA CÍVIL</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">ENGENHARIA DA COMPUTAÇÃO</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">ENGENHARIA DE PRODUÇÃO</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">ENGENHARIA ELÉTRICA</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">GESTÃO DE RECURSOS HUMANOS</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">JORNALISMO</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">LOGÍSTICA</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">MARKETING</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">PEDAGOGIA</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">PUBLICIDADE E PROPAGANDA</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">REDES DE COMPUTADORES</a>
+													</li>
+												</ul>
+											</li>
+											<li class="nav-item dropdown-mobile">
+												<h2 class="dropdown-item" id="second-drop-item">GRADUAÇÃO EAD</h2>
+												<ul class="menu-links-list-mobile navbar-nav" id="">
+													<li class="nav-item mobile">
+														<a href="#">ADMINISTRAÇÃO EAD</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">CIÊNCIAS CONTÁBEIS</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">PEDAGOGIA EAD</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">MARKETING EAD</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">GESTÃO DE RECURSOS HUMANOS EAD</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">LOGÍSTICA EAD</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">PROCESSOS GERENCIAIS EAD</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">GESTÃO FINANCEIRA EAD</a>
+													</li>
+
+												</ul>
+											</li>
+											<li class="nav-item dropdown-mobile">
+												<h2 class="dropdown-item" id="three-drop-item">PÓS-GRADUAÇÃO</h2>
+												<ul class="menu-links-list-mobile navbar-nav" id="">
+													<li class="nav-item mobile">
+														<a href="#">CONTROLADORIA E TRIBUTOS</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">MBA EM MARKETING</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">MÍDIAS SOCIAIS</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">MBA EM RECURSOS HUMANOS</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">MBA EM LOGÍSTICA E OPERAÇÕES</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">PSICOPEDAGOGIA CLÍNICA E INSTITUCIONAL</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">GERÊNCIA DE PROJETOS</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">PROJETO E GERÊNCIA DE REDES DE COMPUTADORES</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">COMPUTADORES</a>
+													</li>
+													<li class="nav-item mobile">
+														<a href="#">SEGURANÇA CIBERNÉTICA</a>
+													</li>
+
+												</ul>
+											</li>
+											<li id="mestrado dropdown-mobile">
+												<h2 class="dropdown-item" id="four-drop-item">MESTRADO</h2>
+												<ul class="menu-links-list-mobile navbar-nav" id="mestrado-menu-links-list">
+													<li class="nav-item mobile">
+														<a href="#">NOVAS TECNOLOGIAS DIGITAIS NA EDUCAÇÃO</a>
+													</li>
+
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<!-- COMO ENTRAR  -->
+									<li class="menu-li nav-item dropdown-mobile">
+										<a href="#" class="nav-mobile-label" id="five-drop-item">COMO ENTRAR</a>
+										<ul class="submenu menu-links-list-mobile center-a-menu navbar-nav">
+											<li class="nav-item">
+												<a href="#" class="nav-link">VESTIBULAR</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">COM A NOTA DO ENEM</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">SEGUNDA GRADUAÇÃO</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">TRANSFERÊNCIA EXTERNA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">REABERTURA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PÓS-GRADUAÇÃO</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">MESTRADO</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-li nav-item dropdown-mobile">
+										<a href="#" class="nav-mobile-label">BOLSAS & FINANCIAMENTOS</a>
+										<ul class="submenu menu-links-list-mobile center-a-menu bolsas navbar-nav mr-auto">
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROUNI</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">FIES</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">CONVÊNIOS</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">AMIGO CARIOCA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PARCELAMENTO UNICARIOCA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">CRÉDITO UNIVERSITÁRIO PRAVALER</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROGRAMA DE BOLSAS EDUCARIOCA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROGRAMA SANTANDER</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">GRADUAÇÃO</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-li nav-item dropdown-mobile">
+										<a href="#" class="nav-mobile-label">ACONTECE</a>
+									</li>
+									<li class="menu-li nav-item dropdown-mobile">
+										<a href="#" class="nav-mobile-label">CONHEÇA A UNIDRUPAL</a>
+										<ul class="submenu menu-links-list-mobile center-a-menu unidrupal navbar-nav">
+											<li class="nav-item">
+												<a href="#" class="nav-link">INSTITUCIONAL</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">DIFERENCIAIS</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROFESSORES</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">RESPONSABILIDADE</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">SOCIOAMBIENTAL</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">CPA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PROGRAMA DE QUALIDADE INTERNA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">CPA</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">PQI</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-li nav-item dropdown-mobile">
+										<a href="#" class="nav-mobile-label">ONDE ESTAMOS</a>
+										<ul class="submenu menu-links-list-mobile center-a-menu onde navbar-nav">
+											<li class="nav-item">
+												<a href="#" class="nav-link">UNIDADE E POLO RIO COMPRIDO</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link">UNIDADE E POLO MÉIER</a>
+											</li>
+										</ul>
+									</li>
+									<li id="btnMenuMobile" class="menu-li nav-link">
+										<button class="btn">INSCREVA-SE</button>
+									</li> 
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<!-- conteudo swiper top  -->
+			<div class="home-slide">
+				<div class="bgTop swiper-container">
+					<div class="bannerOnda swiper-wrapper banner-content-center">
+						<div class="swiper-slide">
+							<div class="lateralEsq">
+
+								<a href="#" class="imgLateralEsq">
+									<img src="img/logoDrupal.png" id="logoDrupal">
+								</a>
+							</div>
+							<div class="lateralDir">
+								<p>BOLSAS & FINANCIAMENTOS</p>
+								<p>PROUNI</p>
+								<hr id="hrBanner" class="hr-blue">
+								<p>Lorem ipsum dolor sit amet avec lorem ipsum dolor sit amet avec lorem ipsum.</p>
+							</div>
+						</div>
+						<!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+						<!-- <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.27,53.78 C220.93,35.03 261.00,152.45 500.27,148.52 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #08f;"></path></svg> -->
+						<div class="swiper-pagination"></div>
+					</div>
+					<div id="imgBottomBanner">
+						<img src="img/blueCircle.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="content middle">
+				<div class="contentEsq">
+					<div class="text-center">
+						<h2 id="titleEnem">Você já está com sua nota do Enem?</h2>
+						<p>Então entre na UniDrupal através
+							do Prouni! Para isso, basta ter
+							conseguido 450 pontos e não ter
+						zerado a redação.</p>
+						<img src="img/linePurple.png" class="linePurple">
+					</div>
+					<p>Increva-se no site do Prouni. Você deverá informar o seu número de inscrição e sua senha no Enem. Se não lembrar a sua senha, acesse a página do Enem. Com a senha em mãos, volte ao site do Prouni e escolha estudar na UniDrupal, incluindo o seu curso e turno dentre as bolsas disponíveis de acordo com o seu perfil.</p>
+					<div class="square red">
+						<p>Em caso de dúvidas, envie um e-mail para a Coordenação do Prouni da UniDrupal: </p>
+						<p>prouni@unidrupal.net</p>
+					</div>
+				</div>
+				<div class="contentDir">
+					<p>VEJA AINDA:</p>
+					
+					<!-- card 1 -->
+					<div class="card-baixe edital">
+						<a href="#" class="card-img-Purple">
+							<img src="img/baixe.png">
+						</a>
+						<div class="card-baixe bg">
+							<div class="card-baixe text">
+								<a href="#">EDITAL PROUNI</a>
+							</div>
+							<div class="card-baixe edital arrow">
+								<a href="#">></a>
+							</div>
+						</div>
+					</div>
+					<!-- card 2 -->
+					<div class="card-baixe portaria">
+						<div class="card-img-Purple">
+							<a href="#">
+								<img src="img/baixe.png">
+							</a>
+						</div>
+						<div class="card-baixe bg portaria">
+							<div class="card-baixe text">
+								<a href="#">PORTARIA NORMATIVA 1 DE 2.
+									REGULAMENTO
+									JAN 2015
+								</a>
+							</div>
+							<div class="card-baixe portaria arrow">
+								<a href="#">></a>
+							</div>
+						</div>
+					</div>
+					<div class="img-line-red">
+						<img src="img/linesRed.png">
+					</div>
+				</div>
+			</div>
+			<!-- FORM RECEBA + INFO  -->
+			<div class="form receba-info">
+				<div class="title">
+					<p>Receba + Info</p>
+				</div>
+				<div class="line red">
+					<img src="img/lineRed.png" />
+				</div>
+				<div class="list">
+					<div class="form-left">
+						<div>
+							<select id='seluser' class="nice-select wide">
+								<option value='0' data-display="CURSO" >-- Selecione o CURSO --</option>
+								<option value='1' data-display="Administração">ADM</option>
+								<option value='2' data-display="Tecnologia da Informação">TI</option>
+							</select>
+						</div>
+						<div>
+							<input type="text" name="" placeholder="E-MAIL">
+						</div>
+					</div>
+					<div class="form-right">
+						<div>
+							<input type="text" name="" placeholder="NOME">
+						</div>
+						<div>
+							<input type="input" name="" placeholder="CELULAR" id="edit1">
+						</div>
+						<div id="msgErro" ></div>
+					</div>
+				</div>
+				<div class="div-btn enviar">
+					<button class="btn">Enviar</button>
+				</div>
+			</div>
+			<!-- INSCRICAO -->
+			<div class="div-inscricao">
+				<div class="title">
+					<p>Deseja fazer sua
+						inscrição de outro jeito?
+					</p>
+					<hr class="hr-blue">
+				</div>
+				<div class="title-secondary gray">
+					<p>FORMAS DE INGRESSO</p>
+				</div>
+				<div class="cards red" id="divlink" onclick="window.location='http://www.google.com';">
+					<div class="card bg-red square">
+						<div class="card-img">
+							<a href="#">
+								<img src="img/write.png">
+							</a>
+						</div>
+						<div class="card-text">
+							<a href="#">VESTIBULAR</a>
+						</div>
+					</div>
+					<div class="card bg-red square" onclick="">
+						<div>
+							<a href="#">
+								<img src="img/study.png">
+							</a>
+						</div>
+						<div class="card-text break-line">
+							<a href="#">SEGUNDA GRADUAÇÃO</a>
+						</div>
+					</div>
+					<div class="card bg-red square" onclick="">
+						<div>
+							<a href="#">
+								<img src="img/ciclo.png">
+							</a>
+						</div>
+						<div class="card-text">
+							<a href="#">TRANSFERÊNCIA</a>
+						</div>
+					</div>
+					<div class="card bg-red square" onclick="">
+						<div>
+							<a href="#">
+								<img src="img/key.png">
+							</a>
+						</div>
+						<div class="card-text">
+							<a href="#">REABERTURA</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="footerLeft">
+					<div class="logo-footer">
+						<a href="#">
+							<img src="img/logoFooter.png">
+						</a>
+						<hr class="hr-red">
+					</div>
+					<div class="redesSociais white">
+						<ul>
+							<li>
+								<a href="#">
+									<img src="img/faceFooter.png" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/twitterFooter.png" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/instaFooter.png" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/youtubeFooter.png" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/linkedinFooter.png" />
+								</a>
+							</li>
+						</ul>
+					</div>
+					<hr class="hr-red">
+					<div class="whatsApp">
+						<a href="#">
+							<img src="img/whatsApp.png" class="imgWhatsApp" />
+							WHATSAPP
+						</a>
+					</div>
+					<div class="tels">
+						<p>99999-2111</p>
+						<p>2111-1010</p>
+					</div>
+				</div>
+				<div class="columns-footer">
+					<div class="columnTop">
+						<div class="listFooter">
+							<div class="titleFooter">	
+								<p>COMO ENTRAR</p>
+							</div>
+							<div class="">
+								<ul>
+									<li><a href="#">Vestibular</a></li>
+									<li><a href="#">Com a nota do ENEM</a></li>
+									<li><a href="#">Segunda Graduação</a></li>
+									<li class="text-break"><a href="#">Transferência de Matrícula</a></li>
+									<li><a href="#">Reabertura</a></li>
+									<li><a href="#">Pós Graduação</a></li>
+									<li><a href="#">Mestrado</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="listFooter">
+							<div class="titleFooter text-break">	
+								<p>BOLSAS E FINANCIAMENTOS</p>
+							</div>
+							<div class="">
+								<ul>
+									<li><a href="#">Prouni</a></li>
+									<li><a href="#">FIES</a></li>
+									<li><a href="#">Bolsas e Descontos</a></li>
+									<li><a href="#">Convênios</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="listFooter">
+							<div class="titleFooter">	
+								<p>ACONTECE</p>
+							</div>
+							<div class="">
+								<ul>
+									<li><a href="#">Notícias</a></li>
+									<li><a href="#">Eventos</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Sala de Imprensa</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- line 2 footer -->
+					<div class="columnBottom">
+						<div class="listFooter">
+							<div class="titleFooter p-footer" class="">	
+								<p>CONHEÇA A UNIDRUPAL</p>
+							</div>
+							<div class="">
+								<ul>
+									<li><a href="#">Institucional</a></li>
+									<li><a href="#">Diferenciais</a></li>
+									<li><a href="#">Professores</a></li>
+									<li><a href="#">Responsabilidade<br> Sócio Ambiental</a></li>
+									<li><a href="#">CPA</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="listFooter">
+							<div class="titleFooter">	
+								<p>CLASSIFICAÇÃO</p>
+							</div>
+							<div class="">
+								<ul>
+									<li><a href="#">Graduação</a></li>
+									<li><a href="#">Educação a Distância</a></li>
+									<li><a href="#">Pós Graduação</a></li>
+									<li><a href="#">Mestrado</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="listFooter">
+							<div class="formFooter">
+								<button class="inscreva btnOrange formFooter">INSCREVA-SE</button>
+								<button class="cleanBtn">CONHEÇA AS UNIDADES</button>
+								<button class="cleanBtn">FALE COM A GENTE</button>
+								<button class="cleanBtn">TRABALHE CONOSCO</button>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+			<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+			</script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+			<!-- js -->
+			<script type="text/javascript" src="js/teste-front-2.js"></script>
+		</body>
+		</html>
