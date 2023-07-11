@@ -1,0 +1,151 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #dadada2e;
+}
+nav ul {
+	padding: 0;
+}
+nav li {
+	list-style: none;
+}
+/*flex*/
+.flex {
+	display: flex;
+}
+.jstf-cnt-space-between {
+	justify-content: space-between;
+}
+/*/flex*/
+/*grid*/
+.grid {
+	display: grid;
+}
+.center-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+/*top nav*/
+.top-nav {
+	background-color: aliceblue;
+	align-items: center;
+	padding: 7px;
+}
+.top-nav img {
+	width: 55px;
+	height: auto;
+}
+/*/top nav*/
+/*right nav*/
+.right-nav {
+	height: 100vh;
+	width: 20vw;
+}
+.right-nav ul li {
+	    padding: 30px 0px 30px 40px;
+}
+.template-columns-two {
+    grid-template-columns: 1fr 1fr;
+}
+
+.center-content {
+	width: 70vw;
+}
+
+.center-content .template-columns-two {
+	grid-gap: 10px;
+	align-items: self-start;
+}
+/* /right nav */
+.template-columns-one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.template-columns-three {
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-gap: 20px;
+}
+.nav-icon {
+	margin: 1em;
+	width: 40px;
+}
+.nav-icon::after,
+.nav-icon::before,
+.nav-icon div {
+	background-color: blue;
+	border-radius: 3px;
+	content: '';
+	display: block;
+	height: 5px;
+	margin: 7px 0;
+	transition: all .2s ease-in-out;
+}
+.nav-icon:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+
+.nav-icon:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.nav-icon:hover div {
+  transform: scale(0);
+}
+.nav-mb,
+.nav-mb-content {
+	display: none;
+}
+
+@media (max-width: 1030px) {
+	.center-content {
+	    width: 80vw;
+	    margin: 0 100px;
+	}
+	.right-nav {
+	    height: 100vh;
+	    width: 19vw;
+	}
+}
+@media (max-width: 750px) {
+	.template-columns-three {
+	    grid-template-columns: 1fr 1fr;
+	}
+}
+@media (max-width: 700px) {
+	.grid {
+		display: flex;
+   		flex-direction: column;
+	}
+}
+@media (max-width: 540px) {
+	.nav-desk {
+		display: none;
+	}
+	.nav-mb,
+	.nav-mb-content {
+		position: fixed;
+	}
+	.nav-mb {
+		display: flex;
+		width: -webkit-fill-available;
+	}
+	.nav-mb-content {
+	    position: fixed;
+	    width: -webkit-fill-available;
+	    height: 100vh;
+	    top: 80px;
+	    left: 0;
+	    z-index: 3;
+	    background-color: aliceblue;
+	    padding: 50px;
+	}
+	.nav-mb-content .div-ul-mb ul li {
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-mb-content .div-ul-mb ul li a {
+		margin: 30px 0;
+	}
+}
