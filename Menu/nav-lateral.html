@@ -1,0 +1,151 @@
+<!-- Validar no w3c -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Testando Nav Bootstrap" />
+<meta name="keywords" content="navbar, bootstrap" />
+<meta name="language" content="pt-br" />
+<meta name="author" content="Jessica Nascimento" />
+
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Css Bootstrap --> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="../css/mediaQueries.css">
+
+<!--Material Design -->
+<link rel="stylesheet" type="text/css" href="cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css
+">
+
+<!-- Css -->
+<link rel="stylesheet" type="text/css" href="css/nav-lateral.css">
+
+<!-- Estilos para esta pagina -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<title>Teste Navbar Bootstrap</title>
+</head>
+<body>
+	<div class="container-fluid">
+		<!-- Header -->
+		<header>
+		<div class="jumbotron" style="margin-bottom: 0px;">
+			<h1>Clever Techie</h1>
+			<p>Let's learn web development</p>
+		</div>
+		</header>
+		<!--bg-primary, bg-succes, bg-warning, bg-info, bg-danger-->
+		<!-- fixed-top, fixed-bottom, * sticky-top > depois de passar pelo menu ele gruda no topo *-->
+		<!-- Nav -->
+		<nav id="nav" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+			<!--Nota: posso escolher o nome do data-target-->
+			<!--class:"alternancia-navbar" alternancia-dados="diminui" alvo-dados="alvo_diminui"-->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- acho q devia ter um segundo button pro outro dropdown-->
+
+			<div class="collapse navbar-collapse" id="collapse_target">
+				<a class="navbar-brand"><img src="img/banksy.png" /></a>
+				<span class="navbar-text">Clever Techie</span>
+
+				<!-- Links -->
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target" href="#">Dropdown 1
+							<span class="caret"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown_target">
+							<a class="dropdown-item" href="#">PHP Videos</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">CSS Videos</a>
+							<a class="dropdown-item" href="#">Bootstrap Videos</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_target2" href="#">Dropdown 2
+							<span class="caret"></span>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown_target2">
+							<ul class="navbar-nav">
+								<a class="dropdown-item" href="#">Teste 1</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Teste 2</a>
+								<a class="dropdown-item" href="#">Teste 3</a>
+							</li>
+						</ul>
+					</div>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link 3</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link 4</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- Input de Pesquisa -->
+			<form class="nav navbar-nav">
+				<span class="glyphicon glyphicon-search"><input class="form-control" type="text" name="procurar" placeholder="Procurar" value=""></span>
+				<button class="search" type="submit">Pesquisar</button>
+			</form>
+
+			<!-- Login -->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="nav-item">
+					<a class="nav-link" href="#"><img src="icons/baseline_perm_identity_black_18dp.png" />Login</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Article -->
+		<article>
+		<div class="wrapper">
+		<h3>Sobre o blog</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		</article>
+		<!-- Sections -->
+		<section>
+		<img src="img/blackCity.png" class="img-fluid" />
+		</section>
+
+		<section>
+			<h2>A maça verde</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+
+		<section>
+			<h2>Batatas e tomates</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+	<!-- Footer -->
+	<footer>&copy; Copyright 2018 HTML.am</footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+<!-- baseado em: 
+https://www.youtube.com/watch?v=L0uNai3XyKQ -->

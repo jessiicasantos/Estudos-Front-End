@@ -1,0 +1,175 @@
+<!-- Validar no w3c -->
+
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Testando Nav Bootstrap" />
+	<meta name="keywords" content="navbar, bootstrap" />
+	<meta name="language" content="pt-br" />
+	<meta name="author" content="Jessica Nascimento" />
+
+	<!-- Angularjs v1.7.7-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<!-- Css Bootstrap --> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<!--Material Design -->
+	<link rel="stylesheet" type="text/css" href="cdn.materialdesignicons.com/3.2.89/css/materialdesignicons.min.css
+">
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="css/nav-center.css">
+
+	<!-- Estilos para esta pagina -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+	<title>Teste Navbar Bootstrap 2 / Projeto FromTheEnd >.<</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<!-- Header -->
+				<header>
+				<div class="jumbotron" style="margin-bottom: 0px;"> <!--botar style no css-->
+					<h1>Clever Techie</h1>
+					<p>Como está o céu hoje?</p>
+				</div>
+				</header>
+			<!--bg-primary, bg-succes, bg-warning, bg-info, bg-danger-->
+			<!-- fixed-top, fixed-bottom, * sticky-top > depois de passar pelo menu ele gruda no topo *-->
+			<!-- Nav -->
+				<nav id="nav" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+					
+			<!-- Simbolo -->
+					<a class="navbar-brand"><img src="img/banksy.png" alt="logo de um panda" title="Panda Banksy!" /></a>
+			<!-- Logo -->
+					<span class="navbar-text">Clever Techie</span>
+				
+			<!-- Links toggle -->
+				<!--Nota: posso escolher o nome do data-target-->
+				<!--class:"alternancia-navbar" alternancia-dados="diminui" alvo-dados="alvo_diminui"-->
+					<button class="navbar-toggler order-first" type="button" data-toggle="collapse" data-target="#links" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+			<!-- Search toggle -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#search" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+
+					<div class="collapse navbar-collapse" id="links">
+
+			<!-- Links -->
+				<!-- Dropdown Nav 1 (itens) -->
+							<!--Nota!? Optei por nao utilizar nav-link mas n sei se ta certo-->
+					<ul class="navbar-nav navbar-collapse d-flex justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sobre</a>
+						</li>
+								<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Itens
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">item 1</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">item 2</a>
+						<a class="dropdown-item" href="#">item 3</a>
+					</div>
+				</li>
+
+				<!-- Dropdown Nav 2 (equips)-->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Equips
+						</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Equip 1</a>
+						<a class="dropdown-item" href="#">Equip 2</a>
+						<a class="dropdown-item" href="#">Equip 3</a>
+					</div>
+				</li>
+					</ul>
+				</div>
+				<!-- **************************** Arrumar alinhamento *************************** -->
+			<!-- Input de Pesquisa -->
+				<!--Tentar com on-click e acho q posso usar angular nesse button seaarch-->
+					<div class="navbar-collapse" id="search">
+						<form class="navbar-collapse">
+							<span class="glyphicon glyphicon-search"><input class="form-control" type="text" name="procurar" placeholder="Procurar" value=""></span> <!-- olhar value depois -->
+							<button class="search" type="submit">Pesquisar</button>
+						</form>
+					</div>
+
+			<!-- Login -->
+				<div id="account">
+					<ul class="nav navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#"><img src="icons/baseline_perm_identity_black_18dp.png" />Account</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- Article -->
+				<article>
+				<div class="wrapper">
+				<h3>Sobre o blog</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				</article>
+			<!-- Sections -->
+				<section>
+				<img src="img/blackCity.png" class="img-fluid" />
+				</section>
+
+				<section>
+					<h2>A maça verde</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</section>
+
+				<section>
+					<h2>Batatas e tomates</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</section>
+			<!-- Footer -->
+				<footer>&copy; Copyright 2018 HTML.am</footer>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<!-- Bootstrap JS -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
+<!--
+		Olhar depois pro angular rodar:
+	https://angular.io/guide/quickstart
+	https://angular.io/tutorial/toh-pt0
+	Show the HeroesComponent view
+	https://cli.angular.io/
+	pasta do node
+	-->
+
+<!-- baseado em: 
+https://www.youtube.com/watch?v=L0uNai3XyKQ -->
