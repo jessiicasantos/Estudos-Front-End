@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerText</title>
+</head>
+<body>
+    <p id="textoHTML">
+        <span style="display: none;">Hakuna</span><strong>Matata</strong>
+        <span style="visibility: hidden;">Mundo</span>
+        <span>JS</span>
+    </p>
+
+    <script>
+        var exemploInner = document.getElementById("textoHTML");
+
+        console.log("--- Usando innerText --- ");
+        console.log(exemploInner.innerText)
+    </script>
+</body>
+</html>
+
+<!-- retorna apenas o texto e ignora todas as tags HTML que estão dentro do elemento, ainda assim "entende" o CSS do elemento, retornando apenas textos visíveis -->

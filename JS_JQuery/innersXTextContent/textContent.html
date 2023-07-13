@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextContent</title>
+</head>
+<body>
+    <p id="textoHTML">
+        <span style="display: none;">Hakuna</span><strong>Matata</strong>
+        <span style="visibility: hidden;">Mundo</span>
+        <span>JS</span>
+    </p>
+
+    <script>
+        var exemploInner = document.getElementById("textoHTML");
+        console.log("-- exemplo textContent --");
+        console.log(exemploInner.textContent);
+    </script>
+</body>
+</html>
+
+<!-- retorna todo o conteúdo do texto, utilizado qdo queremos buscar todo o texto disponível no elemento inclusive o texto oculto pelo css-->

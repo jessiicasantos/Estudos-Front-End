@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Validando Formulários com JQuery Validation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="validationJS.css">
+    </head>
+    <body>
+        <form id="formComentario" method="post" action="">
+            <fieldset>
+                <legend>Por favor preencha o nome, e-mail e comentário</legend>
+
+                <label for="cname" id="cnome" name="nome">Nome (obrigatório, pelo menos 2 caracteres)
+                    <input type="text" id="cnome" name="nome" required minlength="2">
+                </label>
+
+                <label for="cemail">E-mail (obrigatório)
+                    <input type="email" id="cemail" name="email" required>
+                </label>
+
+                <label for="ccomentario">Seu comentário (obrigatório)
+                    <textarea id="ccomentario" name="comentario" cols="30" rows="10" required></textarea>
+                </label>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        
+        <script src="library/jquery-3.6.0.min.js"></script>
+        <script src="library/jquery-validation/jquery.validate_1.19.3.js"></script>
+        <script src="validationJS.js"></script>
+    </body>
+</html>
