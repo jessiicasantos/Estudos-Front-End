@@ -1,0 +1,97 @@
+.card-bg-gastronomy {
+    position: relative;
+    margin: 153.6px auto 0;
+    padding: 153px 15px 0;
+}
+
+.card-gastronomy {
+    position: absolute;
+    top: 57px;
+    padding: 54PX 72px 68px 58px;
+    max-width: 547px;
+}
+
+.card-gastronomy svg {
+    margin: 0 0 24px;
+}
+
+.card-gastronomy .tag::after {
+    position: relative;
+    top: initial;
+    padding: 3px 17px 2px;
+}
+
+.card-gastronomy h3 {
+    margin: 16px 0;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+}
+
+.card-gastronomy p {
+    margin: 0 0 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card-gastronomy .btn-brd-gold {
+    padding: 16px 17px 15px 20px;
+}
+
+.card-gastronomy .btn-gold {
+    margin: 0 14px 0 0;
+    padding: 15px 25px 14px;
+}
+
+.bg-gastronomy {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+    .card-gastronomy {
+        position: relative;
+        margin: 0 9px;
+        top: -23px;
+    }
+
+    .bg-gastronomy {
+        width: 100%;
+    }
+
+    .bg-gastronomy img {
+        height: 523px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    .card-bg-gastronomy {
+        margin: 0 auto 0;
+        padding: 6px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-gastronomy h3 {
+        margin: 6px 0;
+        font-size: 20px;
+    }
+
+    .card-gastronomy p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-gastronomy {
+        padding: 49PX 25px 44px 29px;
+    }
+}

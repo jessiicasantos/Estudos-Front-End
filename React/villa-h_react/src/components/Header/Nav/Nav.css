@@ -1,0 +1,231 @@
+.top-nav {
+    margin: 0 auto;
+    padding: 43px 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1110px;
+    z-index: 9;
+}
+
+.top-nav.sticky {
+    position: fixed;
+    background: #1F2338;
+    max-width: initial;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.nav-logo {
+    z-index: 999;
+}
+
+.nav-logo a {
+    padding: 40px 50px 32px 15px;
+    display: inline-block;
+}
+
+.nav-logo svg {
+    max-width: 258px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav .mb-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    padding: 0 30px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-link a {
+    padding: 40px 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+.nav-link a:hover {
+    color: #AA8B4E;
+}
+
+.socials-mb {
+    display: none;
+}
+
+#btn-nav-mb {
+    display: none;
+    background: transparent;
+    border: 0;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+    padding: 30px 15px;
+    width: 60px;
+    height: 88px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    z-index: 999;
+}
+
+#btn-nav-mb.active::before {
+    transform: translateY(-8px) rotate(135deg);
+}
+
+#btn-nav-mb.active::after {
+    transform: translateY(-32px) rotate(-135deg);
+    -webkit-transform: translateY(-32px) rotate(-135deg);
+    -moz-transform: translateY(-32px) rotate(-135deg);
+}
+
+#btn-nav-mb::before, 
+#btn-nav-mb::after {
+    content: "";
+    display: block;
+    margin: 8px 0;
+    height: 2px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: #AA8B4E;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+}
+
+#btn-nav-mb.active::before, 
+#btn-nav-mb.active::after {
+    margin: 22px 0;
+}
+
+@media screen and (max-width: 1366px) {
+    .nav-logo a {
+        padding: 30px 15px;
+    }
+
+    .nav-links {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav .mb-wrapper {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .top-nav {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #1f2338;
+        z-index: 999;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .top-nav.active {
+        position: fixed;
+    }
+
+    .main-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #btn-nav-mb {
+        display: block;
+    }
+
+    nav .mb-wrapper {
+        display: none;
+        padding: 0 15px;
+        height: calc(90% - 106px);
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav .mb-wrapper.active {
+        display: flex;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .nav-link a {
+        display: inline-flex;
+    }
+
+    .nav-link a {
+        padding: 25px 18vw;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    nav .btn-brd-gold {
+        padding: 21px 22px 20px;
+    }
+
+    .nav-link a,
+    nav .btn-brd-gold {
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 120%;
+    }
+
+    .top-nav .btn-brd-gold {
+        margin: 20px 0 0;
+    }
+
+    .socials-mb {
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .socials-mb a {
+        margin: 0 15px;
+    }
+
+    .nav-link {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-link a {
+        padding: 15px 18vw;
+    }
+
+    .nav-link a, nav .btn-brd-gold {
+        font-size: 16px;
+    }
+
+    .top-nav .btn-brd-gold {
+        margin: 10px 0 0;
+    }
+}

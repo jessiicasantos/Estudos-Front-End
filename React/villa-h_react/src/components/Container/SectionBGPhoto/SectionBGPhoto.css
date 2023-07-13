@@ -1,0 +1,221 @@
+.section-bg-photo {
+    background-image: url('../SectionBGPhoto/img/champagne-mountain-sea.png');
+    background-repeat: no-repeat;
+    background-position: right 351px;
+    padding: 350.4px 0 0;
+    max-width: 1542px;
+    width: 100%;
+}
+
+.section-bg {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-bg section > svg {
+    margin: 0 0 19px;
+}
+
+.section-bg section {
+    max-width: 462px;
+}
+
+.section-bg h2 {
+    margin: 0 0 27px;
+    font-weight: 400;
+}
+
+.section-bg p {
+    margin: 0 0 65px;
+}
+
+.fish-rotate-wrapper {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fish-rotate {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-circle, 
+.fish-logo {
+    position: absolute;
+}
+
+.tag-circle{
+    right: 41px;
+}
+
+.fish-logo {
+    right: 137px;
+}
+
+.anim-photo-card {
+    position: relative;
+    display: flex;
+} 
+
+.anim-photo-card .cards {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    max-width: 561px;
+}
+
+.anim-photo-card .card {
+    margin: 0 0 9px;
+}
+
+.anim-photo-card .card {
+    margin: 0 0 7px;
+}
+
+.anim-photo-card .card svg {
+    margin: 0 0 21px;
+}
+
+.anim-photo-card .card h3 {
+    margin: 0 0 21px;
+    font-size: 28px;
+}
+
+.anim-photo-card .card p {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.anim-photo-card .card {
+    padding: 41px 38px 38px 50px;
+}
+
+.anim-photo-card .card > svg {
+    display: none;
+}
+
+.anim-photo-card .card.active > svg {
+    display: flex;
+}
+
+.anim-photo-card .card.active {
+    padding: 47px 56px 50px 50px;
+}
+
+.anim-photo-card .card:not(.active):hover {
+    background: #c1bebe;
+}
+
+.anim-photo-card .card.active h3 {
+    color: #FFFFFF;
+}
+
+.anim-photo {
+    width: 1088px;
+    height: 858px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .section-bg-photo {
+        padding: 155px 0 0;
+        background-image: none;
+    }
+
+    .fish-rotate {
+        width: 100%;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin: -182px 0 0;
+    }
+
+    .tag-circle {
+        right: 0;
+        width: 238px;
+    }
+
+    .fish-logo {
+        right: 80px;
+        top: 120px;
+        width: 82px;
+    }
+
+    .anim-photo-card {
+        overflow: hidden;
+    }
+
+    .anim-photo-card .cards::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+
+    .anim-photo-card .cards {
+        transform: initial;
+        top: -76px;
+        right: initial;
+        position: relative;
+        padding: 0 26px;
+        max-width: initial;
+        min-width: 292px;
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+
+    .anim-photo-card .card:not(:last-child) {
+        margin: 0 10px 0 0;
+    }
+
+    .anim-photo-card .card,
+    .anim-photo-card .card.active {
+        padding: 34px 22px 22px 31px;
+        min-width: 292px;
+    }
+
+    .anim-photo-card .boat {
+        height: 312px;
+    }
+
+    .anim-photo-card .card svg {
+        margin: 0 0 17px;
+        width: 46px;
+    }
+
+    .anim-photo-card .card h3 {
+        margin: 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-bg section {
+        max-width: 283px;
+    }
+
+    .section-bg h2 {
+        margin: 0 0 14px;
+        max-width: 250px;
+    }
+
+    .anim-photo-card .card h3 {
+        font-size: 18px;
+    }
+
+    .anim-photo-card .card p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .anim-photo-card .card, .anim-photo-card .card.active {
+        padding: 34px 10px 22px 18px;
+    }
+}

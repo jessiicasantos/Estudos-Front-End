@@ -1,0 +1,69 @@
+#app {
+    height: 100%;
+  }
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  
+  body {
+    background: #FFFFFF;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    right: initial;
+    width: initial;
+    height: initial;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+
+  .swiper-button-prev::after {
+    background: #E9E9E9;
+    color: #1F2338;
+  }
+
+  .swiper-button-next::after {
+    background: #1F2338;
+    color: #FFFFFF;
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    padding: 33px 37px 32px 36px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .swiper .swiper-slide > img,
+  .modal {
+    user-select: none;
+  }

@@ -1,0 +1,20 @@
+section p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .section-dark h2 {
+    color: #20334F;
+  }
+  
+  .section-dark p {
+    color: #5F5F5F;
+  }
+
+  @media screen and (max-width: 768px) {
+    section p {
+      font-size: 15px;
+      line-height: 3vh;
+    }
+  }

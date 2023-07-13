@@ -1,0 +1,184 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background:#E9E9E9; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #636979;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #45526F; 
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  text-align: left;
+}
+
+h6 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #20334F;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.tag {
+  position: relative;
+}
+
+.tag::after {
+  content: "Em breve";
+  position: absolute;
+  top: -33px;
+  border: 1px solid #AA8B4E;
+  border-radius: 5px;
+  padding: 0px 17px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+section p, h6, button, .checked-list {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3, section h1, section h2 {
+  font-family: 'Aleo', serif;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+section, .card {
+  text-align: left;
+}
+
+section h1 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 0.3px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 0.01em;
+}
+
+.theme-dark-blue,
+.anim-photo-card .card.active {
+  background: #1F2338;
+  color: #FFFFFF;
+}
+
+.theme-dark-blue p,
+.anim-photo-card .card.active p {
+  color: #DCDCDC;
+}
+
+.theme-gray,
+.anim-photo-card .card {
+  background: #E9E9E9;
+}
+
+.theme-gray h3,
+.anim-photo-card .card h3 {
+  color: #20334F;
+}
+
+.theme-gray p,
+.anim-photo-card .card p {
+  color: #5F5F5F;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.checked-list {
+  padding: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 37px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.checked-list li {
+  display: flex;
+  align-items: center;
+}
+
+.checked-list li > svg {
+  margin: 0 12px 0 0;
+}
+
+@media screen and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .benefits,
+  .photo-section,
+  .photo-section.photo-right,
+  .cards-horizontal,
+  .event-section,
+  .anim-photo-card,
+  .bg-gastronomy {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+    line-height: 4.5vh;
+  }
+
+  .tag::after {
+    padding: 0px 11px;
+    font-size: 11px;
+}
+}
