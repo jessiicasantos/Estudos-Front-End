@@ -1,6 +1,8 @@
-### Projeto de Front-End em React de Landing Page
+## Project of Landing Page in React
 
-## Estudo em React de Landing Page que desenvolvi como Front-End na agência Kindle para a Villa H.
+### React version of project Villa H that I built as a Front-End developer on Kindle Agency.
+
+---
 
 ### React
 
