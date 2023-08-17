@@ -4,7 +4,9 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Button from '@mui/material/Button';
+import MultiActionAreaCard from './components/Card/MultiActionAreaCard';
 import './App.css';
+import Album from './components/Card/Album';
 
 // draft
 // fetch('https://jsonplaceholder.typicode.com/posts/1')
@@ -33,6 +35,8 @@ const App = () => {
     <div>
       {JSON.stringify(data)}
       <Button variant="contained">Hello world</Button>
+      <MultiActionAreaCard />
+      <Album />
     </div>
   )
 }
