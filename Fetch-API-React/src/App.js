@@ -11,29 +11,13 @@ const App = () => {
 
   
   useEffect(() => {
-    // result 1: promise
-    // const fetchData = fetch(
-    //   'https://jsonplaceholder.typicode.com/posts/'
-    // );
-
-    // fetchData
-    //   .then((response) => {
-    //     const json = response.json()
-    //     console.log(json);
-    //     return json;
-    //   })
-    //   .then((data) => {
-    //     console.log(data);
-    //     setData(data)
-    //   })
-
-    // result 2: async/await
+    // async/await
     async function fetchData() {
       let response = await fetch(
         'https://jsonplaceholder.typicode.com/posts/'
       );
       response = await response.json()
-      console.log(response);
+      // console.log(response);
       setData(response);
     }
 
@@ -43,7 +27,6 @@ const App = () => {
   return (
     <div>
       {JSON.stringify(data)}
-      {/* {data} */}
     </div>
   )
 }
