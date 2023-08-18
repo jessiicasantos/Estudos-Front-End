@@ -1,4 +1,5 @@
 import * as React from 'react';
+import axios from 'axios';
 import { useState, useEffect } from 'react'
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
@@ -17,13 +18,19 @@ export default function Album() {
   
   // async/await
   async function fetchData() {
-    let response = await fetch(
-      'https://jsonplaceholder.typicode.com/posts/'
+    try {
+      let response = await axios.get(
+        'https://jsonplaceholder.typicode.com/posts/'
       );
-      response = await response.json()
+
+      response = await response.data;
       // console.log(response);
       setData(response);
+    } catch (err) {
+      console.error('Errrroooo!!! ', err);
     }
+    
+  }
     
   useEffect(() => {
     fetchData()
@@ -38,6 +45,7 @@ export default function Album() {
         {/* Hero unit */}
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
+          <button>ADD +</button>
           <Grid container spacing={4}>
             {data && data.map((card, ind) => (
               <Grid item key={`card-${ind}`} xs={12} sm={6} md={4}>
@@ -61,8 +69,9 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" onClick={() => console.log('click')}>View</Button>
+                    <Button size="small" variant="contained" onClick={(e) => console.log(e.target)}>View</Button>
                     <Button size="small">Edit</Button>
+                    <Button>Delete</Button>
                   </CardActions>
                 </Card>
               </Grid>
