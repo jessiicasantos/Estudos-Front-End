@@ -23,7 +23,6 @@ export default function Album() {
       response = await response.json()
       // console.log(response);
       setData(response);
-      
     }
     
   useEffect(() => {
@@ -40,7 +39,7 @@ export default function Album() {
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {data.map((card, ind) => (
+            {data && data.map((card, ind) => (
               <Grid item key={`card-${ind}`} xs={12} sm={6} md={4}>
                 <Card
                   sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
@@ -62,15 +61,14 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small">View</Button>
+                    <Button size="small" onClick={() => console.log('click')}>View</Button>
                     <Button size="small">Edit</Button>
                   </CardActions>
                 </Card>
               </Grid>
             ))}
           </Grid>
-          
-          {/* data test: */}
+          {/* test: */}
           {/* <h1>{JSON.stringify(data)}</h1> */}
         </Container>
       </main>
