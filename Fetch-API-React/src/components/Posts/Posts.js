@@ -7,7 +7,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import CssBaseline from '@mui/material/CssBaseline';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
@@ -37,12 +36,12 @@ export default function Album() {
 
   return (
     <>
-      <CssBaseline />
-      <main>
+    {/* //   <CssBaseline />
+    // <main>
         {/* Hero unit */}
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
-          <Button className='new-post' variant="contained">New Post <AddIcon /></Button>
+          <Button className='new-post' variant="contained" sx={{mb: 2}} component={Link} to="./create-post">New Post <AddIcon /></Button>
           <Grid container spacing={4}>
             {data && data.map((card, ind) => (
               <Grid item key={`card-${ind}`} xs={12} sm={6} md={4}>
@@ -66,9 +65,9 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" variant="contained" component={Link} to={`/posts/${card.id}`}>View</Button>
-                    <Button size="small" /* onClick={(e) => console.log(e.target) */>Edit</Button>
-                    <Button>Delete</Button>
+                    <Button size="small" variant="contained" component={Link} to={`./${card.id}`}>View</Button>
+                    <Button>Edit</Button>
+                    <Button /* onClick={(e) => console.log(e.target) */>Delete</Button>
                   </CardActions>
                 </Card>
               </Grid>
@@ -77,7 +76,7 @@ export default function Album() {
           {/* test: */}
           {/* <h1>{JSON.stringify(data)}</h1> */}
         </Container>
-      </main>
+    {/* </main> */}
     </>
   );
 }

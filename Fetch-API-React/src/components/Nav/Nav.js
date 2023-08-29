@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
 const pages = ['Posts'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -89,7 +90,7 @@ function Nav() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center" href="/posts">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -119,6 +120,8 @@ function Nav() {
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                component={Link}
+                to="/posts"
               >
                 {page}
               </Button>

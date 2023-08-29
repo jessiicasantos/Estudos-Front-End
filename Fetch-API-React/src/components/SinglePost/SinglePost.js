@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import CssBaseline from '@mui/material/CssBaseline';
+// import CssBaseline from '@mui/material/CssBaseline';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -32,16 +32,16 @@ const SinglePage = () => {
   });
 
   return (
-      <>
-    <CssBaseline />
-    <main>
-      <Box
-        sx={{
-          bgcolor: 'background.paper',
-          pt: 8,
-          pb: 6,
-        }}
-      >
+    // <>
+    //   <CssBaseline />
+    //   <main>
+        <Box
+          sx={{
+            bgcolor: 'background.paper',
+            pt: 8,
+            pb: 6,
+          }}
+        >
           {data && 
             <Container maxWidth="sm">
                 <Typography
@@ -67,7 +67,7 @@ const SinglePage = () => {
           }
       </Box>
               
-      {/* <Container sx={{ py: 8 }} maxWidth="md">
+      /* <Container sx={{ py: 8 }} maxWidth="md">
         <Grid container spacing={4}>
           {data && data.map((card, i) => (
             <Grid item key={`card-${i}`} xs={12} sm={6} md={4}>
@@ -99,9 +99,9 @@ const SinglePage = () => {
             </Grid>
           ))}
         </Grid>
-      </Container> */}
-    </main>
-  </>
+      </Container> */
+  //   </main>
+  // </>
   );
 }
 
