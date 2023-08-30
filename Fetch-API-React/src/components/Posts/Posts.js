@@ -18,7 +18,7 @@ export default function Album() {
   async function fetchData() {
       try {
           let response = await axios.get(
-          'https://jsonplaceholder.typicode.com/posts/'
+          'http://localhost:5000/posts'
           );
           
           let dataResponse = await response.data;
@@ -54,14 +54,17 @@ export default function Album() {
                       // 16:9
                       pt: '56.25%',
                     }}
-                    image="https://source.unsplash.com/random?wallpapers"
+                    image={card.img}
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                    Id: {card.id} <br/> {card.title}
+                      Id: {card.id} <br/> {card.title}
+                    </Typography>
+                    <Typography gutterBottom variant="h6" component="h6">
+                      Author: {card.author}
                     </Typography>
                     <Typography>
-                        {card.body}
+                      {card.text}
                     </Typography>
                   </CardContent>
                   <CardActions>

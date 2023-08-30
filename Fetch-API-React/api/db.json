@@ -1,0 +1,10 @@
+{
+    "posts": [
+      { "id": 1, "title": "json-server", "author": "typicode", "img": "https://images.unsplash.com/photo-1682686581580-d99b0230064e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60", "text": "Este é um teste." },
+      { "id": 2, "title": "Titulo Teste", "author": "anonymous", "img": "https://images.unsplash.com/photo-1693323818873-bcf90d64b1fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60", "text": "Teste 2." }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+}

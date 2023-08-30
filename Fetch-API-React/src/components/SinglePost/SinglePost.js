@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import { CardMedia } from '@mui/material';
 
 const SinglePage = () => {
   const [data, setData] = useState(null);
@@ -15,7 +16,7 @@ const SinglePage = () => {
   async function fetchData() {
       try {
         let response = await axios.get(
-          `https://jsonplaceholder.typicode.com/posts/${postId}`
+          `http://localhost:5000/posts/${postId}`
         );
           
         let dataResponse = await response.data;
@@ -29,12 +30,9 @@ const SinglePage = () => {
 
   useEffect(() => {
     fetchData()
-  });
+  }, []);
 
   return (
-    // <>
-    //   <CssBaseline />
-    //   <main>
         <Box
           sx={{
             bgcolor: 'background.paper',
@@ -45,16 +43,34 @@ const SinglePage = () => {
           {data && 
             <Container maxWidth="sm">
                 <Typography
-                    component="h1"
-                    variant="h2"
-                    align="center"
-                    color="text.primary"
-                    gutterBottom
+                component="h1"
+                variant="h2"
+                align="center"
+                color="text.primary"
+                gutterBottom
                 >
-                {data.title}
+                  {data.title}
                 </Typography>
+                <CardMedia
+                  component="div"
+                  sx={{
+                    // 16:9
+                    pt: '56.25%',
+                    mb: 3,
+                  }}
+                  image={data.img}
+                />
                 <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                {data.body}
+                  {data.text}
+                </Typography>
+                <Typography
+                component="h6"
+                variant="h6"
+                align="center"
+                color="text.primary"
+                gutterBottom
+                >
+                  Author: {data.author}
                 </Typography>
                 <Stack
                     sx={{ pt: 4 }}
