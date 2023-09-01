@@ -34,10 +34,29 @@ export default function Album() {
     fetchData()
   }, []);
 
+    // async/await
+    async function deleteData(id) {
+      try {
+        let response = await axios.delete(
+          `http://localhost:5000/posts/${id}`
+        );
+          
+        let dataResponse = await response.data;
+        console.log(dataResponse);
+        
+        console.log(response?.status);
+        if(response?.status === 200) {
+          return window.location = '/posts';
+        }
+
+        return dataResponse;
+      } catch (err) {
+        console.error('Errrroooo!!! ', err);
+      }
+    }
+
   return (
     <>
-    {/* //   <CssBaseline />
-    // <main>
         {/* Hero unit */}
         <Container sx={{ py: 8 }} maxWidth="md">
           {/* End hero unit */}
@@ -69,17 +88,14 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" variant="contained" component={Link} to={`./${card.id}`}>View</Button>
-                    <Button>Edit</Button>
-                    <Button /* onClick={(e) => console.log(e.target) */>Delete</Button>
+                    <Button component={Link} to={`./${card.id}/edit-post/`}>Edit</Button>
+                    <Button onClick={() => deleteData(card.id)}>Delete</Button>
                   </CardActions>
                 </Card>
               </Grid>
             ))}
           </Grid>
-          {/* test: */}
-          {/* <h1>{JSON.stringify(data)}</h1> */}
         </Container>
-    {/* </main> */}
     </>
   );
 }

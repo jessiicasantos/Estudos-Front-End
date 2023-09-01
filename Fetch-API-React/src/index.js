@@ -6,10 +6,10 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App';
-import Create from './components/Create/Create'
 import Album from './components/Posts/Posts';
 import SinglePage from './components/SinglePost/SinglePost';
 import CreatePost from './components/CreatePost/CreatePost';
+import EditPost from './components/EditPost/EditPost';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "posts/create-post/",
         element: <CreatePost />
+      },
+      {
+        path: `posts/:postId/edit-post/`,
+        element: <EditPost />
       }
     ]
   }
