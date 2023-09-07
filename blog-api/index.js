@@ -144,6 +144,34 @@ app.patch(`/posts/:postId`, (req, res) => {
     });
 })
 
+app.delete(`/posts/:userId`, (req, res) => {
+    console.log('REQ PARAMS: ', req.params);
+
+    const connection = mysql.createConnection({
+        host: 'localhost',
+        port: 3306,
+        user: 'root',
+        password: 'password',
+        database: 'myapp'
+    })
+      
+    connection.connect(function(err) {
+        if (err) throw err;
+        
+        console.log("Connected!");
+        
+        const command = `DELETE FROM posts WHERE Id = ${req.params.userId};`;
+
+        connection.query(command, function (err, result) {
+            if (err) throw err;
+            console.log("1 record inserted");
+            // console.log('Command Param: ', command, ' Result Param:', result);
+            console.log('Result Param:', result);
+            res.status(200).json( result );
+        });
+    });
+})
+
 app.listen(port, () => {
     console.log(`Blog API Listening on port ${port}`);
 })
