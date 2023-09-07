@@ -24,7 +24,7 @@ export function CreatePost() {
         title: data.get('title'),
         img: "https://images.unsplash.com/photo-1693323818873-bcf90d64b1fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60", // data.get('img'),
         author: data.get('author'),
-        text: data.get('text'),
+        content: data.get('content'),
       });
 
       let dataResponse = await response.data;
@@ -83,9 +83,9 @@ export function CreatePost() {
             <TextField
               margin="normal"
               fullWidth
-              name="text"
-              id="text outlined-multiline-static"
-              label="Text"
+              name="content"
+              id="content outlined-multiline-static"
+              label="content"
               multiline
               rows={4}
               autoComplete="current-text"

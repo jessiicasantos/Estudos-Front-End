@@ -49,7 +49,7 @@ const SinglePage = () => {
                 color="text.primary"
                 gutterBottom
                 >
-                  {data.title}
+                  {data.Title}
                 </Typography>
                 <CardMedia
                   component="div"
@@ -58,10 +58,10 @@ const SinglePage = () => {
                     pt: '56.25%',
                     mb: 3,
                   }}
-                  image={data.img}
+                  image={data.ImageUrl}
                 />
                 <Typography variant="h5" align="center" color="text.secondary" paragraph>
-                  {data.text}
+                  {data.Content}
                 </Typography>
                 <Typography
                 component="h6"
@@ -70,7 +70,7 @@ const SinglePage = () => {
                 color="text.primary"
                 gutterBottom
                 >
-                  Author: {data.author}
+                  Author: {data.Author}
                 </Typography>
                 <Stack
                     sx={{ pt: 4 }}

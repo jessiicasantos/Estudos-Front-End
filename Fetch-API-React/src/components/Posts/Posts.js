@@ -11,7 +11,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
-export default function Album() {
+export default function Posts() {
   const [data, setData] = useState(null);
     
   // async/await
@@ -42,8 +42,7 @@ export default function Album() {
         );
           
         let dataResponse = await response.data;
-        console.log(dataResponse);
-        
+        // console.log(dataResponse);
         console.log(response?.status);
         if(response?.status === 200) {
           return window.location = '/posts';
@@ -73,23 +72,23 @@ export default function Album() {
                       // 16:9
                       pt: '56.25%',
                     }}
-                    image={card.img}
+                    image={card.ImageUrl}
                   />
                   <CardContent sx={{ flexGrow: 1 }}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Id: {card.id} <br/> {card.title}
+                      Id: {card.Id} <br/> {card.Title}
                     </Typography>
                     <Typography gutterBottom variant="h6" component="h6">
-                      Author: {card.author}
+                      Author: {card.Author}
                     </Typography>
                     <Typography>
-                      {card.text}
+                      {card.Content}
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" variant="contained" component={Link} to={`./${card.id}`}>View</Button>
-                    <Button component={Link} to={`./${card.id}/edit-post/`}>Edit</Button>
-                    <Button onClick={() => deleteData(card.id)}>Delete</Button>
+                    <Button size="small" variant="contained" component={Link} to={`./${card.Id}`}>View</Button>
+                    <Button component={Link} to={`./${card.Id}/edit-post/`}>Edit</Button>
+                    <Button onClick={() => deleteData(card.Id)}>Delete</Button>
                   </CardActions>
                 </Card>
               </Grid>

@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App';
-import Album from './components/Posts/Posts';
+import Posts from './components/Posts/Posts';
 import SinglePage from './components/SinglePost/SinglePost';
 import CreatePost from './components/CreatePost/CreatePost';
 import EditPost from './components/EditPost/EditPost';
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        element: <Album />,
+        element: <Posts />,
         path: "/posts",
         index: true,
       },
