@@ -92,7 +92,7 @@ export function EditPost() {
               label="Title"
               name="title"
               autoComplete="title"
-              defaultValue={data.title}
+              defaultValue={data.Title}
               autoFocus
           />
           <TextField
@@ -103,7 +103,7 @@ export function EditPost() {
             label="author"
             name="author"
             autoComplete="author"
-            defaultValue={data.author}
+            defaultValue={data.Author}
             autoFocus
           />
             <TextField
@@ -114,7 +114,7 @@ export function EditPost() {
               label="content"
               multiline
               rows={4}
-              defaultValue={data.content}
+              defaultValue={data.Content}
               autoComplete="current-text"
             />
             <Button
