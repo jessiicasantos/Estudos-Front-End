@@ -1,6 +1,0 @@
-Fetch API - Faça uma solicitação (Request) e busque (fetch()) um recurso
-Request & Response objects.
-
-Ele retorna uma promessa (Promise) que resolve a resposta (Response) a essa solicitação (Request).
-
-Depois que uma resposta (Response) é recuperada, há vários métodos para definir qual é o conteúdo do corpo (Body) e como ele deve ser tratado.
