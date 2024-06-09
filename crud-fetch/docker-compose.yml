@@ -1,0 +1,53 @@
+version: "3.5"
+
+services:
+  jessica:
+    container_name: jessica
+    depends_on:
+      - jessica_db
+    image: jessica
+    build:
+      context: .
+      dockerfile: Dockerfile-local
+    stdin_open: true
+    tty: true
+    networks:
+      - jessica
+    env_file:
+      - .env
+    volumes:
+      - $PWD:/app
+      - ./node_modules:/app/node_modules
+    working_dir: /app
+    ports:
+      - 80:80
+    environment:
+      - DB_PWD=S3cret
+      - DB_USER=cms_db_user
+      - DB_NAME=db_cms
+      - DB_HOST=jessica_db
+      - DB_PORT=3306
+      - NEW_RELIC_ENABLED=false
+  jessica_db:
+    image: mysql:8.0.30
+    container_name: "jessica_db"
+    restart: unless-stopped
+    ports:
+      - 3306:3306
+    volumes:
+      - mysqldata_master:/var/lib/mysql
+      - ./mysql-local/master.cnf:/etc/my.cnf
+    environment:
+      - MYSQL_ROOT_PASSWORD=S3cret
+      - MYSQL_USER=cms_db_user
+      - MYSQL_DATABASE=db_cms
+      - MYSQL_PASSWORD=S3cret
+    networks:
+      - jessica
+
+networks:
+  jessica:
+
+volumes:
+  mysqldata_master:
+  nodemodules:

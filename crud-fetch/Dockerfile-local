@@ -1,0 +1,14 @@
+FROM node:20-alpine
+
+RUN apk add --update \
+  git \
+  openssh \
+  python3 \
+  && rm -rf /var/cache/apk/*
+
+RUN touch /root/.npmrc
+
+COPY ./run-local.sh /etc/run-local.sh
+RUN chmod +x /etc/run-local.sh
+CMD ["/bin/sh"]
+ENTRYPOINT ["/etc/run-local.sh"]
